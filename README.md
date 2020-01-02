@@ -1,6 +1,6 @@
 # Bach
 
-A "word processor" for writing sheet music.
+A word processor for writing sheet music for Windows.
 
 Use the (computer) keyboard to enter notes.
 
