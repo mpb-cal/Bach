@@ -1,0 +1,1383 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+#include "commctrl.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+BACH2DOC                ICON    DISCARDABLE     "res\\Document.ico"
+BACH2APP                ICON    DISCARDABLE     "res\\bach.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Import...\tCtrl+I",          ID_FILE_IMPORT
+        MENUITEM "&Load Wave File Into Current Track...", 
+                                                ID_FILE_LOADWAVEFILE
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT, GRAYED
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        , GRAYED
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Sen&d...",                    ID_FILE_SEND, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR, GRAYED
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUSBAR, GRAYED
+        MENUITEM "Zoom &In\t-",                 ID_VIEW_ZOOMIN
+        MENUITEM "Zoom &Out\t+,=",              ID_VIEW_ZOOMOUT
+        MENUITEM "&Grand Staff",                ID_VIEW_GRANDSTAFF
+    END
+    POPUP "&Settings"
+    BEGIN
+        MENUITEM "&Cursor...",                  ID_SETTINGS_CURSOR
+        MENUITEM "Ch&annel...",                 ID_SETTINGS_CHANNEL
+        MENUITEM "&Voice...",                   ID_SETTINGS_VOICE
+        MENUITEM "&Song...",                    ID_SETTINGS_SONG
+        MENUITEM "C&hord...",                   ID_SETTINGS_CHORD
+        MENUITEM "&Patch...",                   ID_SETTINGS_PATCH
+        MENUITEM "&Key...",                     ID_SETTINGS_KEY
+        MENUITEM "&Recording...",               ID_SETTINGS_RECORDING
+    END
+    POPUP "&Play"
+    BEGIN
+        MENUITEM "&Go\tF9",                     ID_PLAY_GO
+        MENUITEM "Go From &Current Measure\tShft+F9", ID_PLAY_GOFROMCURSOR
+        MENUITEM "&Stop\tF10",                  ID_PLAY_STOP
+        MENUITEM "&Loop\tCtrl+F9",              ID_PLAY_LOOP
+        MENUITEM "S&wing It",                   ID_PLAY_SWINGIT
+        MENUITEM "&Play Structured Song",       ID_PLAY_PLAYSTRUCTUREDSONG
+    END
+    POPUP "&Record"
+    BEGIN
+        MENUITEM "&Go",                         ID_RECORD_GO
+        MENUITEM "&Stop",                       ID_RECORD_STOP
+    END
+    POPUP "&Note"
+    BEGIN
+        MENUITEM "&Thirty-second",              ID_NOTE_THIRTYSECOND
+        MENUITEM "&Sixteenth",                  ID_NOTE_SIXTEENTH
+        MENUITEM "Dotted Si&xteenth",           ID_NOTE_SIXTEENTHD
+        MENUITEM "&Eighth",                     ID_NOTE_EIGHTH
+        MENUITEM "Dotted E&ighth",              ID_NOTE_EIGHTHD
+        MENUITEM "&Quarter",                    ID_NOTE_QUARTER, CHECKED
+        MENUITEM "Dotted Q&uarter",             ID_NOTE_QUARTERD
+        MENUITEM "&Half",                       ID_NOTE_HALF
+        MENUITEM "Dotted H&alf",                ID_NOTE_HALFD
+        MENUITEM "&Whole",                      ID_NOTE_WHOLE
+        MENUITEM SEPARATOR
+        MENUITEM "&Chord",                      ID_NOTE_CHORD
+        MENUITEM SEPARATOR
+        MENUITEM "&Percussion...",              ID_NOTE_PERCUSSION
+    END
+    POPUP "&Change"
+    BEGIN
+        MENUITEM "Tranpose &Chromatically...",  ID_CHANGE_TRANSPOSE_NOTES
+        MENUITEM "Transpose &Diatonically...",  ID_CHANGE_TRANSPOSE_DIATONIC
+    END
+    POPUP "C&ompose"
+    BEGIN
+        MENUITEM "&Macro...",                   ID_COMPOSE_MACRO
+        MENUITEM "&Drum Part...",               ID_COMPOSE_DRUM_PART
+        MENUITEM "&Guitar Chord...",            ID_COMPOSE_GUITAR_CHORD
+        MENUITEM "&Chord Progression...",       ID_COMPOSE_CHORDPROGRESSION
+        MENUITEM "Me&lody...",                  ID_COMPOSE_MELODY
+        MENUITEM "&Harmonize...",               ID_COMPOSE_HARMONIZE
+        MENUITEM "Song and Melody &1",          ID_COMPOSE_SONGANDMELODY1
+        MENUITEM "Song and Melody &2",          ID_COMPOSE_SONGANDMELODY2
+        MENUITEM "S&ong",                       ID_COMPOSE_SONGNOMELODY
+        MENUITEM "&Songs",                      ID_COMPOSE_SONGS_
+        MENUITEM "De&fine Section...",          ID_COMPOSE_DEFINESECTION
+        MENUITEM "Song S&tructure...",          ID_COMPOSE_SONGSTRUCTURE
+        MENUITEM "C&lick Track...",             ID_COMPOSE_CLICKTRACK
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_TOPICS
+        MENUITEM "&About Bach...",              ID_HELP_ABOUT
+    END
+    POPUP "&Debug"
+    BEGIN
+        MENUITEM "&Normalize",                  ID_DEBUG_NORMALIZE
+        MENUITEM "&Reset",                      ID_DEBUG_RESET
+        MENUITEM "&Dump Song...",               ID_DEBUG_DUMPSONG
+    END
+END
+
+IDR_POPUPMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "&Mute",                       ID_POPUP_MUTE
+        MENUITEM "Clear A&ll",                  ID_POPUP_CLEARALL
+        POPUP "&Clef"
+        BEGIN
+            MENUITEM "&Treble",                     ID_POPUP_CLEF_TREBLE
+            MENUITEM "&Bass",                       ID_POPUP_CLEF_BASS
+        END
+        POPUP "C&hannel"
+        BEGIN
+            MENUITEM "1",                           ID_POPUP_CHANNEL_1
+            MENUITEM "2",                           ID_POPUP_CHANNEL_2
+            MENUITEM "3",                           ID_POPUP_CHANNEL_3
+            MENUITEM "4",                           ID_POPUP_CHANNEL_4
+            MENUITEM "5",                           ID_POPUP_CHANNEL_5
+            MENUITEM "6",                           ID_POPUP_CHANNEL_6
+            MENUITEM "7",                           ID_POPUP_CHANNEL_7
+            MENUITEM "8",                           ID_POPUP_CHANNEL_8
+            MENUITEM "9",                           ID_POPUP_CHANNEL_9
+            MENUITEM "10",                          ID_POPUP_CHANNEL_10
+            MENUITEM "11",                          ID_POPUP_CHANNEL_11
+            MENUITEM "12",                          ID_POPUP_CHANNEL_12
+            MENUITEM "13",                          ID_POPUP_CHANNEL_13
+            MENUITEM "14",                          ID_POPUP_CHANNEL_14
+            MENUITEM "15",                          ID_POPUP_CHANNEL_15
+            MENUITEM "16",                          ID_POPUP_CHANNEL_16
+        END
+        POPUP "&Patch"
+        BEGIN
+            POPUP "&Piano"
+            BEGIN
+                MENUITEM "&Acoustic Grand Piano",       ID_POPUP_PATCH_PIANO_ACOUSTICGRANDPIANO
+
+                MENUITEM "&Bright Acoustic Piano",      ID_POPUP_PATCH_PIANO_BRIGHTACOUSTICPIANO
+
+                MENUITEM "&Electric Grand Piano",       ID_POPUP_PATCH_PIANO_ELECTRICGRANDPIANO
+
+                MENUITEM "&Honky-tonk Piano",           ID_POPUP_PATCH_PIANO_HONKYTONKPIANO
+
+                MENUITEM "&Rhodes Piano",               ID_POPUP_PATCH_PIANO_RHODESPIANO
+
+                MENUITEM "&Chorused Piano",             ID_POPUP_PATCH_PIANO_CHORUSEDPIANO
+
+                MENUITEM "Har&psichord",                ID_POPUP_PATCH_PIANO_HARPSICHORD
+
+                MENUITEM "C&lavinet",                   ID_POPUP_PATCH_PIANO_CLAVINET
+
+            END
+            POPUP "&Chromatic Percussion"
+            BEGIN
+                MENUITEM "&Celesta",                    ID_POPUP_PATCH_CHROMATICPERCUSSION_CELESTA
+
+                MENUITEM "&Glockenspiel",               ID_POPUP_PATCH_CHROMATICPERCUSSION_GLOCKENSPIEL
+
+                MENUITEM "&Music Box",                  ID_POPUP_PATCH_CHROMATICPERCUSSION_MUSICBOX
+
+                MENUITEM "&Vibraphone",                 ID_POPUP_PATCH_CHROMATICPERCUSSION_VIBRAPHONE
+
+                MENUITEM "&Marimba",                    ID_POPUP_PATCH_CHROMATICPERCUSSION_MARIMBA
+
+                MENUITEM "&Xylophone",                  ID_POPUP_PATCH_CHROMATICPERCUSSION_XYLOPHONE
+
+                MENUITEM "&Tubular Bells",              ID_POPUP_PATCH_CHROMATICPERCUSSION_TUBULARBELLS
+
+                MENUITEM "&Dulcimer",                   ID_POPUP_PATCH_CHROMATICPERCUSSION_DULCIMER
+
+            END
+            POPUP "&Organ"
+            BEGIN
+                MENUITEM "Hammond Organ",               ID_POPUP_PATCH_ORGAN_DRAWBARORGAN
+
+                MENUITEM "Percussive Organ",            ID_POPUP_PATCH_ORGAN_PERCUSSIVEORGAN
+
+                MENUITEM "Rock Organ",                  ID_POPUP_PATCH_ORGAN_ROCKORGAN
+
+                MENUITEM "Church Organ",                ID_POPUP_PATCH_ORGAN_CHURCHORGAN
+
+                MENUITEM "Reed Organ",                  ID_POPUP_PATCH_ORGAN_REEDORGAN
+
+                MENUITEM "Accordion",                   ID_POPUP_PATCH_ORGAN_ACCORDION
+
+                MENUITEM "Harmonica",                   ID_POPUP_PATCH_ORGAN_HARMONICA
+
+                MENUITEM "Tango Accordion",             ID_POPUP_PATCH_ORGAN_TANGOACCORDION
+
+            END
+            POPUP "&Guitar"
+            BEGIN
+                MENUITEM "Acoustic Guitar (nylon)",     ID_POPUP_PATCH_GUITAR_ACOUSTICGUITARNYLON
+
+                MENUITEM "Acoustic Guitar (steel)",     ID_POPUP_PATCH_GUITAR_ACOUSTICGUITARSTEEL
+
+                MENUITEM "Electric Guitar (jazz)",      ID_POPUP_PATCH_GUITAR_ELECTRICGUITARJAZZ
+
+                MENUITEM "Electric Guitar (clean)",     ID_POPUP_PATCH_GUITAR_ELECTRICGUITARCLEAN
+
+                MENUITEM "Electric Guitar (muted)",     ID_POPUP_PATCH_GUITAR_ELECTRICGUITARMUTED
+
+                MENUITEM "Overdriven Guitar",           ID_POPUP_PATCH_GUITAR_OVERDRIVENGUITAR
+
+                MENUITEM "Distortion Guitar",           ID_POPUP_PATCH_GUITAR_DISTORTIONGUITAR
+
+                MENUITEM "Guitar Harmonics",            ID_POPUP_PATCH_GUITAR_GUITARHARMONICS
+
+            END
+            POPUP "&Bass"
+            BEGIN
+                MENUITEM "Acoustic Bass",               ID_POPUP_PATCH_BASS_ACOUSTICBASS
+
+                MENUITEM "Electric Bass (finger)",      ID_POPUP_PATCH_BASS_ELECTRICBASSFINGER
+
+                MENUITEM "Electric Bass (pick)",        ID_POPUP_PATCH_BASS_ELECTRICBASSPICK
+
+                MENUITEM "Fretless Bass",               ID_POPUP_PATCH_BASS_FRETLESSBASS
+
+                MENUITEM "Slap Bass 1",                 ID_POPUP_PATCH_BASS_SLAPBASS1
+
+                MENUITEM "Slap Bass 2",                 ID_POPUP_PATCH_BASS_SLAPBASS2
+
+                MENUITEM "Synth Bass 1",                ID_POPUP_PATCH_BASS_SYNTHBASS1
+
+                MENUITEM "Synth Bass 2",                ID_POPUP_PATCH_BASS_SYNTHBASS2
+
+            END
+            POPUP "Strings/Orchestra"
+            BEGIN
+                MENUITEM "Violin",                      ID_POPUP_PATCH_STRINGSORCHESTRA_VIOLIN
+
+                MENUITEM "Viola",                       ID_POPUP_PATCH_STRINGSORCHESTRA_VIOLA
+
+                MENUITEM "Cello",                       ID_POPUP_PATCH_STRINGSORCHESTRA_CELLO
+
+                MENUITEM "Contrabass",                  ID_POPUP_PATCH_STRINGSORCHESTRA_CONTRABASS
+
+                MENUITEM "Tremolo Strings",             ID_POPUP_PATCH_STRINGSORCHESTRA_TREMOLOSTRINGS
+
+                MENUITEM "Pizzicato Strings",           ID_POPUP_PATCH_STRINGSORCHESTRA_PIZZICATOSTRINGS
+
+                MENUITEM "Orchestral Harp",             ID_POPUP_PATCH_STRINGSORCHESTRA_ORCHESTRALHARP
+
+                MENUITEM "Timpani",                     ID_POPUP_PATCH_STRINGSORCHESTRA_TIMPANI
+
+            END
+            POPUP "&Ensemble"
+            BEGIN
+                MENUITEM "String Ensemble 1",           ID_POPUP_PATCH_ENSEMBLE_STRINGENSEMBLE1
+
+                MENUITEM "String Ensemble 2",           ID_POPUP_PATCH_ENSEMBLE_STRINGENSEMBLE2
+
+                MENUITEM "SynthStrings 1",              ID_POPUP_PATCH_ENSEMBLE_SYNTHSTRINGS1
+
+                MENUITEM "SynthStrings 2",              ID_POPUP_PATCH_ENSEMBLE_SYNTHSTRINGS2
+
+                MENUITEM "Choir Aahs",                  ID_POPUP_PATCH_ENSEMBLE_CHOIRAAHS
+
+                MENUITEM "Voice Oohs",                  ID_POPUP_PATCH_ENSEMBLE_VOICEOOHS
+
+                MENUITEM "Synth Voice",                 ID_POPUP_PATCH_ENSEMBLE_SYNTHVOICE
+
+                MENUITEM "Orchestra Hit",               ID_POPUP_PATCH_ENSEMBLE_ORCHESTRAHIT
+
+            END
+            POPUP "B&rass"
+            BEGIN
+                MENUITEM "Trumpet",                     ID_POPUP_PATCH_BRASS_TRUMPET
+
+                MENUITEM "Trombone",                    ID_POPUP_PATCH_BRASS_TROMBONE
+
+                MENUITEM "Tuba",                        ID_POPUP_PATCH_BRASS_TUBA
+
+                MENUITEM "Muted Trumpet",               ID_POPUP_PATCH_BRASS_MUTEDTRUMPET
+
+                MENUITEM "French Horn",                 ID_POPUP_PATCH_BRASS_FRENCHHORN
+
+                MENUITEM "Brass Section",               ID_POPUP_PATCH_BRASS_BRASSSECTION
+
+                MENUITEM "SynthBrass 1",                ID_POPUP_PATCH_BRASS_SYNTHBRASS1
+
+                MENUITEM "SynthBrass 2",                ID_POPUP_PATCH_BRASS_SYNTHBRASS2
+
+            END
+            POPUP "Ree&d"
+            BEGIN
+                MENUITEM "Soprano Sax",                 ID_POPUP_PATCH_REED_SOPRANOSAX
+                , INACTIVE
+                MENUITEM "Alto Sax",                    ID_POPUP_PATCH_REED_ALTOSAX
+
+                MENUITEM "Tenor Sax",                   ID_POPUP_PATCH_REED_TENORSAX
+
+                MENUITEM "Baritone Sax",                ID_POPUP_PATCH_REED_BARITONESAX
+
+                MENUITEM "Oboe",                        ID_POPUP_PATCH_REED_OBOE
+
+                MENUITEM "English Horn",                ID_POPUP_PATCH_REED_ENGLISHHORN
+
+                MENUITEM "Bassoon",                     ID_POPUP_PATCH_REED_BASSOON
+
+                MENUITEM "Clarinet",                    ID_POPUP_PATCH_REED_CLARINET
+
+            END
+            POPUP "P&ipe"
+            BEGIN
+                MENUITEM "Piccolo",                     ID_POPUP_PATCH_PIPE_PICCOLO
+
+                MENUITEM "Flute",                       ID_POPUP_PATCH_PIPE_FLUTE
+
+                MENUITEM "Recorder",                    ID_POPUP_PATCH_PIPE_RECORDER
+
+                MENUITEM "Pan Flute",                   ID_POPUP_PATCH_PIPE_PANFLUTE
+
+                MENUITEM "Blown Bottle",                ID_POPUP_PATCH_PIPE_BLOWNBOTTLE
+
+                MENUITEM "Shakuhachi",                  ID_POPUP_PATCH_PIPE_SHAKUHACHI
+
+                MENUITEM "Whistle",                     ID_POPUP_PATCH_PIPE_WHISTLE
+
+                MENUITEM "Ocarina",                     ID_POPUP_PATCH_PIPE_OCARINA
+
+            END
+            POPUP "Synth &Lead"
+            BEGIN
+                MENUITEM "Square",                      ID_POPUP_PATCH_SYNTHLEAD_LEAD1SQUARE
+                , HELP
+                MENUITEM "Sawtooth",                    ID_POPUP_PATCH_SYNTHLEAD_LEAD2SAWTOOTH
+
+                MENUITEM "Calliope",                    ID_POPUP_PATCH_SYNTHLEAD_LEAD3CALLIOPE
+
+                MENUITEM "Chiff",                       ID_POPUP_PATCH_SYNTHLEAD_LEAD4CHIFF
+
+                MENUITEM "Charang",                     ID_POPUP_PATCH_SYNTHLEAD_LEAD5CHARANG
+
+                MENUITEM "Voice",                       ID_POPUP_PATCH_SYNTHLEAD_LEAD6VOICE
+
+                MENUITEM "Fifths",                      ID_POPUP_PATCH_SYNTHLEAD_LEAD7FIFTHS
+
+                MENUITEM "Bass + Lead",                 ID_POPUP_PATCH_SYNTHLEAD_LEAD8BASSLEAD
+
+            END
+            POPUP "Synth P&ad"
+            BEGIN
+                MENUITEM "New age",                     ID_POPUP_PATCH_SYNTHPAD_PAD1NEWAGE
+
+                MENUITEM "Warm",                        ID_POPUP_PATCH_SYNTHPAD_PAD2WARM
+
+                MENUITEM "Polysynth",                   ID_POPUP_PATCH_SYNTHPAD_PAD3POLYSYNTH
+
+                MENUITEM "Choir",                       ID_POPUP_PATCH_SYNTHPAD_PAD4CHOIR
+
+                MENUITEM "Bowed",                       ID_POPUP_PATCH_SYNTHPAD_PAD5BOWED
+
+                MENUITEM "Metallic",                    ID_POPUP_PATCH_SYNTHPAD_PAD6METALLIC
+
+                MENUITEM "Halo",                        ID_POPUP_PATCH_SYNTHPAD_PAD7HALO
+
+                MENUITEM "Sweep",                       ID_POPUP_PATCH_SYNTHPAD_PAD8SWEEP
+
+            END
+            POPUP "S&ynth SFX"
+            BEGIN
+                MENUITEM "Rain",                        ID_POPUP_PATCH_SYNTHSFX_RAIN
+
+                MENUITEM "Soundtrack",                  ID_POPUP_PATCH_SYNTHSFX_SOUNDTRACK
+
+                MENUITEM "Crystal",                     ID_POPUP_PATCH_SYNTHSFX_CRYSTAL
+
+                MENUITEM "Atmosphere",                  ID_POPUP_PATCH_SYNTHSFX_ATMOSPHERE
+
+                MENUITEM "Brightness",                  ID_POPUP_PATCH_SYNTHSFX_BRIGHTNESS
+
+                MENUITEM "Goblins",                     ID_POPUP_PATCH_SYNTHSFX_GOBLINS
+
+                MENUITEM "Echoes",                      ID_POPUP_PATCH_SYNTHSFX_ECHOES
+
+                MENUITEM "Sci-fi",                      ID_POPUP_PATCH_SYNTHSFX_SCIFI
+
+            END
+            POPUP "Ethni&c"
+            BEGIN
+                MENUITEM "Sitar",                       ID_POPUP_PATCH_ETHNIC_SITAR
+
+                MENUITEM "Banjo",                       ID_POPUP_PATCH_ETHNIC_BANJO
+
+                MENUITEM "Shamisen",                    ID_POPUP_PATCH_ETHNIC_SHAMISEN
+
+                MENUITEM "Koto",                        ID_POPUP_PATCH_ETHNIC_KOTO
+
+                MENUITEM "Kalimba",                     ID_POPUP_PATCH_ETHNIC_KALIMBA
+
+                MENUITEM "Bagpipe",                     ID_POPUP_PATCH_ETHNIC_BAGPIPE
+
+                MENUITEM "Fiddle",                      ID_POPUP_PATCH_ETHNIC_FIDDLE
+
+                MENUITEM "Shanai",                      ID_POPUP_PATCH_ETHNIC_SHANAI
+
+            END
+            POPUP "Perc&ussive"
+            BEGIN
+                MENUITEM "Tinkle Bell",                 ID_POPUP_PATCH_PERCUSSIVE_TINKLEBELL
+
+                MENUITEM "Agogo",                       ID_POPUP_PATCH_PERCUSSIVE_AGOGO
+
+                MENUITEM "Steel Drums",                 ID_POPUP_PATCH_PERCUSSIVE_STEELDRUMS
+
+                MENUITEM "Woodblock",                   ID_POPUP_PATCH_PERCUSSIVE_WOODBLOCK
+
+                MENUITEM "Taiko Drum",                  ID_POPUP_PATCH_PERCUSSIVE_TAIKODRUM
+
+                MENUITEM "Melodic Drum",                ID_POPUP_PATCH_PERCUSSIVE_MELODICDRUM
+
+                MENUITEM "Synth Drum",                  ID_POPUP_PATCH_PERCUSSIVE_SYNTHDRUM
+
+                MENUITEM "Reverse Cymbal",              ID_POPUP_PATCH_PERCUSSIVE_REVERSECYMBAL
+
+            END
+            POPUP "SF&X"
+            BEGIN
+                MENUITEM "Guitar Fret Noise",           ID_POPUP_PATCH_SFX_GUITARFRETNOISE
+
+                MENUITEM "Breath Noise",                ID_POPUP_PATCH_SFX_BREATHNOISE
+
+                MENUITEM "Seashore",                    ID_POPUP_PATCH_SFX_SEASHORE
+
+                MENUITEM "Bird Tweet",                  ID_POPUP_PATCH_SFX_BIRDTWEET
+
+                MENUITEM "Telephone Ring",              ID_POPUP_PATCH_SFX_TELEPHONERING
+
+                MENUITEM "Helicopter",                  ID_POPUP_PATCH_SFX_HELICOPTER
+
+                MENUITEM "Applause",                    ID_POPUP_PATCH_SFX_APPLAUSE
+
+                MENUITEM "Gunshot",                     ID_POPUP_PATCH_SFX_GUNSHOT
+
+            END
+        END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "+",            ID_VIEW_ZOOMOUT,        ASCII,  NOINVERT
+    "-",            ID_VIEW_ZOOMIN,         ASCII,  NOINVERT
+    "=",            ID_VIEW_ZOOMOUT,        ASCII,  NOINVERT
+    VK_F10,         ID_PLAY_STOP,           VIRTKEY, NOINVERT
+    VK_F9,          ID_PLAY_GO,             VIRTKEY, NOINVERT
+    VK_F9,          ID_PLAY_LOOP,           VIRTKEY, CONTROL, NOINVERT
+    VK_F9,          ID_PLAY_GOFROMCURSOR,   VIRTKEY, SHIFT, NOINVERT
+    "^C",           ID_EDIT_COPY,           ASCII,  NOINVERT
+    "\t",           ID_FILE_IMPORT,         ASCII,  NOINVERT
+    "^N",           ID_FILE_NEW,            ASCII,  NOINVERT
+    "^O",           ID_FILE_OPEN,           ASCII,  NOINVERT
+    "^P",           ID_FILE_PRINT,          ASCII,  NOINVERT
+    "^S",           ID_FILE_SAVE,           ASCII,  NOINVERT
+    "^V",           ID_EDIT_PASTE,          ASCII,  NOINVERT
+    "^X",           ID_EDIT_CUT,            ASCII,  NOINVERT
+    "^Z",           ID_EDIT_UNDO,           ASCII,  NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_QUARTER             BITMAP  DISCARDABLE     "res\\quarter.bmp"
+IDB_SIXTEENTH           BITMAP  DISCARDABLE     "res\\sixteenth.bmp"
+IDB_WHOLE               BITMAP  DISCARDABLE     "res\\whole.bmp"
+IDB_EIGHTH              BITMAP  DISCARDABLE     "res\\eighth.bmp"
+IDB_HALFD               BITMAP  DISCARDABLE     "res\\halfd.bmp"
+IDB_HALF                BITMAP  DISCARDABLE     "res\\half.bmp"
+IDB_QUARTERD            BITMAP  DISCARDABLE     "res\\quarterd.bmp"
+IDB_EIGHTHD             BITMAP  DISCARDABLE     "res\\eighthd.bmp"
+IDB_SIXTEENTHR          BITMAP  DISCARDABLE     "res\\sixteenthr.bmp"
+IDB_EIGHTHR             BITMAP  DISCARDABLE     "res\\eighthr.bmp"
+IDB_EIGHTHDR            BITMAP  DISCARDABLE     "res\\eighthdr.bmp"
+IDB_QUARTERR            BITMAP  DISCARDABLE     "res\\quarterr.bmp"
+IDB_QUARTERDR           BITMAP  DISCARDABLE     "res\\quarterdr.bmp"
+IDB_HALFR               BITMAP  DISCARDABLE     "res\\halfr.bmp"
+IDB_HALFDR              BITMAP  DISCARDABLE     "res\\halfdr.bmp"
+IDB_WHOLER              BITMAP  DISCARDABLE     "res\\bitmap7.bmp"
+IDB_SHARP               BITMAP  DISCARDABLE     "res\\sharp.bmp"
+IDB_NOACC               BITMAP  DISCARDABLE     "res\\noacc.bmp"
+IDB_CURSOR1             BITMAP  DISCARDABLE     "res\\cursor1.bmp"
+IDB_CSIXTEENTH          BITMAP  DISCARDABLE     "res\\csixteen.bmp"
+IDB_CEIGHTH             BITMAP  DISCARDABLE     "res\\ceighth.bmp"
+IDB_CEIGHTHD            BITMAP  DISCARDABLE     "res\\ceighthd.bmp"
+IDB_CQUARTER            BITMAP  DISCARDABLE     "res\\cquarter.bmp"
+IDB_CQUARTERD           BITMAP  DISCARDABLE     "res\\cquarterd.bmp"
+IDB_CHALF               BITMAP  DISCARDABLE     "res\\chalf.bmp"
+IDB_CHALFD              BITMAP  DISCARDABLE     "res\\chalfd.bmp"
+IDB_CWHOLE              BITMAP  DISCARDABLE     "res\\cwhole.bmp"
+IDB_CSIXTEENTHS         BITMAP  DISCARDABLE     "res\\csixteenths.bmp"
+IDB_CEIGHTHS            BITMAP  DISCARDABLE     "res\\ceighths.bmp"
+IDB_CEIGHTHDS           BITMAP  DISCARDABLE     "res\\ceighthds.bmp"
+IDB_CQUARTERS           BITMAP  DISCARDABLE     "res\\cquarters.bmp"
+IDB_CQUARTERDS          BITMAP  DISCARDABLE     "res\\cquarterds.bmp"
+IDB_CHALFS              BITMAP  DISCARDABLE     "res\\chalfs.bmp"
+IDB_CHALFDS             BITMAP  DISCARDABLE     "res\\chalfds.bmp"
+IDB_CWHOLES             BITMAP  DISCARDABLE     "res\\cwholes.bmp"
+IDB_SIXTEENTHU          BITMAP  DISCARDABLE     "res\\sixteenthu.bmp"
+IDB_EIGHTHU             BITMAP  DISCARDABLE     "res\\eighthu.bmp"
+IDB_EIGHTHDU            BITMAP  DISCARDABLE     "res\\eighthdu.bmp"
+IDB_QUARTERU            BITMAP  DISCARDABLE     "res\\quarteru.bmp"
+IDB_QUARTERDU           BITMAP  DISCARDABLE     "res\\quarterdu.bmp"
+IDB_HALFU               BITMAP  DISCARDABLE     "res\\halfu.bmp"
+IDB_HALFDU              BITMAP  DISCARDABLE     "res\\halfdu.bmp"
+IDB_WHOLEU              BITMAP  DISCARDABLE     "res\\wholeu.bmp"
+IDB_TREBLECLEF          BITMAP  DISCARDABLE     "res\\trebleclef.bmp"
+IDB_BASSCLEF            BITMAP  DISCARDABLE     "res\\bassclef.bmp"
+IDB_CSIXTEENTHD         BITMAP  DISCARDABLE     "res\\csixteenthd.bmp"
+IDB_CTHIRTYSECOND       BITMAP  DISCARDABLE     "res\\cthirtysecond.bmp"
+IDB_CTHIRTYSECONDS      BITMAP  DISCARDABLE     "res\\cthirtyseconds.bmp"
+IDB_THIRTYSECOND        BITMAP  DISCARDABLE     "res\\thirtysecond.bmp"
+IDB_SIXTEENTHD          BITMAP  DISCARDABLE     "res\\bitmap5.bmp"
+IDB_THIRTYSECONDU       BITMAP  DISCARDABLE     "res\\thirtysecondu.bmp"
+IDB_THIRTYSECONDR       BITMAP  DISCARDABLE     "res\\thirtysecondr.bmp"
+IDB_SIXTEENTHDU         BITMAP  DISCARDABLE     "res\\sixteenthdu.bmp"
+IDB_SIXTEENTHDR         BITMAP  DISCARDABLE     "res\\sixteenthdr.bmp"
+IDB_CSIXTEENTHDS        BITMAP  DISCARDABLE     "res\\csixteenthds.bmp"
+IDB_CURSORKEYS          BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_ALTERNATEKEYS       BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_NOTE_CHORD          BITMAP  DISCARDABLE     "res\\note_cho.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 55
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Bach"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            "Bach2App",-1,11,17,18,20
+    LTEXT           "Bach Version 0.2",-1,40,10,119,8
+    LTEXT           "Copyright © 1997 Marc P. Bernasconi",-1,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,32,14,WS_GROUP
+END
+
+SONGSETTINGS DIALOG DISCARDABLE  0, 0, 173, 127
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Song Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NUMVOICES,80,7,23,14,ES_NUMBER
+    EDITTEXT        IDC_TEMPO,62,30,23,14,ES_NUMBER
+    COMBOBOX        IDC_TIMESIGN,121,53,31,142,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_TIMESIGD,121,73,31,54,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Tempo (bpm) :",-1,7,33,46,8
+    LTEXT           "Time Signature Numerator :",-1,7,55,87,8
+    LTEXT           "Time Signature Denominator :",-1,7,76,94,8
+    LTEXT           "Number of voices :",-1,7,10,65,8
+    DEFPUSHBUTTON   "OK",IDOK,29,106,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,92,106,50,14
+END
+
+VOICESETTINGS DIALOG DISCARDABLE  0, 0, 257, 250
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Voice Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_PATCH,7,38,146,203,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CLEF,192,38,49,47,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_VELOCITY,200,56,20,14,ES_AUTOHSCROLL
+    CONTROL         "&Mute",IDC_MUTE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    167,78,32,10
+    EDITTEXT        IDC_CHANNEL,229,97,20,14
+    PUSHBUTTON      "&Color...",IDC_COLOR,167,122,50,14
+    DEFPUSHBUTTON   "OK",IDOK,167,206,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,167,227,50,14
+    LTEXT           "Channel (1 - 16) :",IDC_STATIC,167,99,55,8
+    LTEXT           "Patch :",IDC_STATIC,7,24,31,8
+    LTEXT           "Voice :",IDC_STATIC,7,9,23,8
+    LTEXT           "Clef :",IDC_STATIC,167,40,17,8
+    LTEXT           "Static",IDC_VOICE,37,9,19,8
+    LTEXT           "Velocity :",IDC_STATIC,167,59,30,8
+END
+
+CURSORSETTINGS DIALOG DISCARDABLE  0, 0, 172, 210
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cursor Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_CRSARROW,7,23,65,81,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CTLARROW,7,70,65,81,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "&Remember Attack",IDC_REMEMBERATTACK,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,7,106,73,10
+    CONTROL         "&Insertion Mode",IDC_INSERTIONMODE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,122,63,10
+    CONTROL         "Retain &pitch when changing voices",IDC_RETAINPITCH,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,138,127,10
+    CONTROL         "&Auto Advance",IDC_AUTOADVANCE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,154,61,10
+    DEFPUSHBUTTON   "OK",IDOK,25,185,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,95,185,50,14
+    CONTROL         200,IDC_STATIC,"Static",SS_BITMAP,88,70,36,22
+    LTEXT           "Distance moved when using cursor keys :",IDC_STATIC,7,7,
+                    138,8
+    LTEXT           "Distance moved when using L and ' keys :",IDC_STATIC,7,
+                    54,139,8
+    CONTROL         199,IDC_STATIC,"Static",SS_BITMAP,88,23,36,22
+END
+
+CHANNELSETTINGS DIALOG DISCARDABLE  0, 0, 150, 314
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Channel Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT1,51,24,42,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT2,51,40,42,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT3,51,56,42,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT4,51,72,42,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT5,51,88,42,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT6,51,104,42,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT7,51,120,42,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT8,51,136,42,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT9,51,152,42,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT10,51,168,42,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT11,51,184,42,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT12,51,200,42,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT13,51,216,42,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT14,51,232,42,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT15,51,248,42,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT16,51,264,42,14,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,13,293,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,82,293,50,14
+    LTEXT           "1",IDC_STATIC,18,27,8,8
+    LTEXT           "Channel",IDC_STATIC,7,9,27,8
+    LTEXT           "Pan Position (0 - 127)",IDC_STATIC,52,9,68,8
+    LTEXT           "2",IDC_STATIC,18,43,8,8
+    LTEXT           "3",IDC_STATIC,18,59,8,8
+    LTEXT           "4",IDC_STATIC,18,75,8,8
+    LTEXT           "5",IDC_STATIC,18,91,8,8
+    LTEXT           "6",IDC_STATIC,18,107,8,8
+    LTEXT           "7",IDC_STATIC,18,123,8,8
+    LTEXT           "8",IDC_STATIC,18,139,8,8
+    LTEXT           "9",IDC_STATIC,18,155,8,8
+    LTEXT           "10",IDC_STATIC,18,171,8,8
+    LTEXT           "11",IDC_STATIC,18,187,8,8
+    LTEXT           "12",IDC_STATIC,18,203,8,8
+    LTEXT           "13",IDC_STATIC,18,219,8,8
+    LTEXT           "14",IDC_STATIC,18,235,8,8
+    LTEXT           "15",IDC_STATIC,18,251,8,8
+    LTEXT           "16",IDC_STATIC,18,267,8,8
+END
+
+CHORDSETTINGS DIALOG DISCARDABLE  0, 0, 205, 129
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Chord Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_VOICES,78,7,40,14,ES_NUMBER
+    LTEXT           "Number of voices :",-1,7,7,60,8
+    GROUPBOX        "Keyboard Instructions",-1,7,58,191,63
+    LTEXT           "spacebar : enter diatonic chord",-1,20,76,109,12
+    LTEXT           "j : enter major chord (disabled)",-1,20,87,109,12
+    LTEXT           "n : enter minor chord (disabled)",-1,20,98,109,12
+    DEFPUSHBUTTON   "OK",IDOK,148,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,148,24,50,14
+END
+
+PATCHSETTINGS DIALOG DISCARDABLE  0, 0, 268, 258
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Patch for all Voices"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_PATCH,12,11,178,236,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,207,11,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,207,33,50,14
+END
+
+KEYSETTINGS DIALOG DISCARDABLE  0, 0, 146, 69
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Key for all Voices"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_KEY,36,7,80,158,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Key :",-1,7,9,17,8
+    DEFPUSHBUTTON   "OK",IDOK,15,48,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,78,48,50,14
+END
+
+MACRO DIALOG DISCARDABLE  0, 0, 383, 246
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Run Macro"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_MACRO,39,7,273,139,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_REPETITIONS,58,26,32,14,ES_NUMBER
+    LTEXT           "Macro :",-1,7,9,28,8
+    LTEXT           "Repetitions :",-1,7,28,45,8
+    GROUPBOX        "Help",-1,37,62,308,153
+    LTEXT           "format string for macros :",-1,54,79,91,8
+    LTEXT           """n"" drop a note (spacebar)",-1,66,90,85,8
+    LTEXT           """r4"" move right 4 ticks",-1,66,116,71,8
+    LTEXT           """l6"" move left 6 ticks",-1,66,124,66,8
+    LTEXT           """u2"" move up 2 notes",-1,66,132,70,8
+    LTEXT           """d2"" move down 2 notes",-1,66,140,80,8
+    LTEXT           """v4"" change value to 4 ticks",-1,66,164,92,8
+    LTEXT           "e.g. ""v2 n r4 n r4 n v1 n r2 n r2 v2 n r4""",-1,66,172,
+                    126,8
+    LTEXT           "makes 1/8 note, 1/8 rest, 1/8 note, 1/8 rest, 1/16 note, 1/16 rest, 1/16 note,",
+                    -1,66,180,245,8
+    LTEXT           "1/16 rest, 1/8 note, 1/8 rest",-1,66,188,90,8
+    LTEXT           """t"" drop a rest ('r')",-1,66,108,56,8
+    LTEXT           """U3"" move up 3 voices",-1,66,148,75,8
+    LTEXT           """D2"" move down 2 voices",-1,66,156,84,8
+    LTEXT           """3"" drop a sharp note",-1,66,99,78,8
+    DEFPUSHBUTTON   "OK",IDOK,326,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,326,24,50,14
+END
+
+DRUMPART DIALOG DISCARDABLE  0, 0, 252, 226
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Compose Drum Part"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_MEASURES,170,15,25,14
+    CONTROL         "Rock 1",IDC_ROCK1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,135,55,39,10
+    CONTROL         "Rock 2",IDC_ROCK2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,135,69,39,10
+    CONTROL         "Techno 1",IDC_TECHNO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,135,82,47,10
+    CONTROL         "Ska 1",IDC_SKA1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,135,95,47,10
+    CONTROL         "HipHop 1",IDC_HIPHOP1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,135,108,46,10
+    CONTROL         "Swing 1",IDC_SWING1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,135,121,46,10
+    LTEXT           "Start at measure :",-1,127,156,56,8
+    EDITTEXT        IDC_STARTATMEASURE,190,153,40,14
+    LTEXT           "Kick :",-1,15,60,19,8
+    LTEXT           "Snare :",-1,15,78,24,8
+    LTEXT           "HiHat :",-1,15,95,23,8
+    LTEXT           "Tom 1 :",-1,15,113,25,8
+    LTEXT           "Tom 2 :",-1,15,132,25,8
+    EDITTEXT        IDC_KICK,50,60,40,14,WS_DISABLED
+    EDITTEXT        IDC_SNARE,50,78,40,14,WS_DISABLED
+    EDITTEXT        IDC_HIHAT,50,94,40,14,WS_DISABLED
+    EDITTEXT        IDC_TOM1,50,111,40,14,WS_DISABLED
+    EDITTEXT        IDC_TOM2,50,129,40,14,WS_DISABLED
+    GROUPBOX        "Voice",-1,7,7,93,143
+    LTEXT           "Measures :",-1,128,18,36,8
+    GROUPBOX        "Style",-1,126,42,114,106
+    LTEXT           "Make sure these voices are set for channel 10.",-1,15,
+                    22,75,18
+    DEFPUSHBUTTON   "Create",IDOK,47,175,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,143,175,50,14
+END
+
+GUITARCHORD DIALOG DISCARDABLE  0, 0, 200, 111
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Guitar Chord"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_CHORD,39,10,65,151,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_TICKS,41,32,33,14
+    CONTROL         "&Bass Note",IDC_BASSNOTE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,70,55,10
+    DEFPUSHBUTTON   "OK",IDOK,143,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,143,24,50,14
+    LTEXT           "Value :",IDC_STATIC,7,35,23,8
+    LTEXT           "Chord :",IDC_STATIC,7,12,24,8
+    CONTROL         "&Melody",IDC_MELODY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,89,55,10
+    CONTROL         "&Chord",IDC_CHORDBOOL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,53,55,10
+END
+
+TRANSPOSENOTES DIALOG DISCARDABLE  0, 0, 183, 68
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Transpose Chromatically"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_HALFSTEPS,85,7,25,14
+    CONTROL         "&Up",IDC_UP,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,7,27,25,10
+    CONTROL         "&Down",IDC_DOWN,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,7,46,35,10
+    DEFPUSHBUTTON   "OK",IDOK,126,7,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,126,24,50,14
+    LTEXT           "Number of Half-steps :",IDC_STATIC,7,9,71,8
+END
+
+TRANSPOSEDIATONIC DIALOG DISCARDABLE  0, 0, 186, 71
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Transpose Diatonically"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_PITCHES,85,7,25,14
+    CONTROL         "&Up",IDC_UP,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,7,27,25,10
+    CONTROL         "&Down",IDC_DOWN,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,7,46,35,10
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+    LTEXT           "Number of Pitches :",IDC_STATIC,7,9,71,8
+END
+
+MELODY DIALOG DISCARDABLE  0, 0, 155, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Compose Melody"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_MEASURES,49,7,26,14,ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,98,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,98,24,50,14
+    LTEXT           "Measures :",IDC_STATIC,7,9,36,8
+    GROUPBOX        "Warning",IDC_STATIC,7,51,141,36
+    LTEXT           "Melody might really suck.",IDC_STATIC,22,68,80,8
+END
+
+HARMONIZE DIALOG DISCARDABLE  0, 0, 208, 124
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Harmonize Melody"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_GRANULARITY,50,7,65,81,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_VOICE,161,7,40,14,ES_NUMBER
+    EDITTEXT        IDC_MEASURES,161,25,40,14,ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,151,82,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,151,103,50,14
+    LTEXT           "Granularity :",IDC_STATIC,7,9,38,8
+    LTEXT           "Chords are 4-voice :",IDC_STATIC,23,49,64,8
+    LTEXT           "treble clef",IDC_STATIC,29,62,32,8
+    LTEXT           "treble clef",IDC_STATIC,29,75,32,8
+    LTEXT           "bass clef",IDC_STATIC,29,88,29,8
+    LTEXT           "bass clef",IDC_STATIC,29,101,29,8
+    GROUPBOX        "Remember",IDC_STATIC,7,31,99,83
+    LTEXT           "Voice :",IDC_STATIC,130,9,23,8
+    LTEXT           "Measures :",IDC_STATIC,120,28,36,8
+END
+
+MIDIINFO DIALOG DISCARDABLE  0, 0, 463, 258
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Midi Info"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,71,237,50,14
+    LTEXT           "Tracks :",IDC_STATIC,16,27,27,8
+    LTEXT           "Tempo :",IDC_STATIC,15,41,27,8
+    LTEXT           "Static",IDC_TRACKS,46,27,19,8
+    LTEXT           "Static",IDC_TEMPO,45,42,19,8
+    LTEXT           "File Format :",IDC_STATIC,17,14,39,8
+    LTEXT           "Static",IDC_FILEFORMAT,62,14,19,8
+    CONTROL         "List3",IDC_VOICES,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,14,60,411,136
+END
+
+PERCUSSION DIALOG DISCARDABLE  0, 0, 205, 250
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Percussion"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_PITCH,7,7,129,236,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,148,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,148,24,50,14
+END
+
+DEFINESECTION DIALOG DISCARDABLE  0, 0, 243, 78
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Define Section"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_FIRSTMEASURE,60,9,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_LASTMEASURE,60,27,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_NAME,35,44,102,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,186,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,186,24,50,14
+    LTEXT           "First measure :",IDC_STATIC,7,12,46,8
+    LTEXT           "Last measure :",IDC_STATIC,7,29,47,8
+    LTEXT           "Name :",IDC_STATIC,7,46,24,8
+END
+
+SONGSTRUCTURE DIALOG DISCARDABLE  0, 0, 416, 173
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Song Structure"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_SECTIONLIST,7,20,123,128,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    PUSHBUTTON      "Add",IDC_ADD,147,20,50,14,WS_GROUP
+    LISTBOX         IDC_SECTIONORDER,213,20,123,128,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    PUSHBUTTON      "Move up",IDC_MOVEUP,350,20,50,14,WS_GROUP
+    PUSHBUTTON      "Move down",IDC_MOVEDOWN,350,41,50,14,WS_GROUP
+    PUSHBUTTON      "Remove",IDC_REMOVE,350,63,50,14,WS_GROUP
+    DEFPUSHBUTTON   "OK",IDOK,350,118,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,350,135,50,14
+    LTEXT           "Defined sections :",IDC_STATIC,7,7,58,8
+    LTEXT           "Arrangement :",IDC_STATIC,213,7,45,8
+END
+
+DUMPSONG DIALOG DISCARDABLE  0, 0, 473, 292
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Song Dump"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_TEXT,7,7,459,254,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,211,271,50,14
+END
+
+CHORDPROGRESSION_ DIALOG DISCARDABLE  0, 0, 507, 287
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Chord Progression"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,455,255,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,455,272,50,14
+    PUSHBUTTON      "CM",IDC_BUTTON1,10,15,35,15
+    PUSHBUTTON      "C#M",IDC_BUTTON2,10,30,35,15
+    PUSHBUTTON      "DM",IDC_BUTTON3,10,45,35,15
+    PUSHBUTTON      "D#M",IDC_BUTTON4,10,60,35,15
+    PUSHBUTTON      "EM",IDC_BUTTON5,10,75,35,15
+    PUSHBUTTON      "FM",IDC_BUTTON6,10,90,35,15
+    PUSHBUTTON      "F#M",IDC_BUTTON7,10,105,35,15
+    PUSHBUTTON      "GM",IDC_BUTTON8,10,120,35,15
+    PUSHBUTTON      "G#M",IDC_BUTTON9,10,135,35,15
+    PUSHBUTTON      "AM",IDC_BUTTON10,10,150,35,15
+    PUSHBUTTON      "A#M",IDC_BUTTON11,10,165,35,15
+    PUSHBUTTON      "BM",IDC_BUTTON12,10,180,35,15
+    PUSHBUTTON      "CM7",IDC_BUTTON13,45,15,35,15
+    PUSHBUTTON      "CM9",IDC_BUTTON14,80,15,35,15
+    PUSHBUTTON      "Cm",IDC_BUTTON15,115,15,35,15
+    PUSHBUTTON      "Cm7",IDC_BUTTON16,150,15,35,15
+    PUSHBUTTON      "Cm9",IDC_BUTTON17,185,15,35,15
+    PUSHBUTTON      "C7",IDC_BUTTON18,220,15,35,15
+    PUSHBUTTON      "C11",IDC_BUTTON19,255,15,35,15
+    PUSHBUTTON      "C13",IDC_BUTTON20,290,15,35,15
+    PUSHBUTTON      "Cm7b5",IDC_BUTTON21,325,15,35,15
+    PUSHBUTTON      "Cdim7",IDC_BUTTON22,360,15,35,15
+    PUSHBUTTON      "C6",IDC_BUTTON23,395,15,35,15
+    PUSHBUTTON      "C+",IDC_BUTTON24,430,15,35,15
+    PUSHBUTTON      "C7+",IDC_BUTTON25,465,15,35,15
+    PUSHBUTTON      "C#M7",IDC_BUTTON26,45,30,35,15
+    PUSHBUTTON      "C#M9",IDC_BUTTON27,80,30,35,15
+    PUSHBUTTON      "C#m",IDC_BUTTON28,115,30,35,15
+    PUSHBUTTON      "C#m7",IDC_BUTTON29,150,30,35,15
+    PUSHBUTTON      "C#m9",IDC_BUTTON30,185,30,35,15
+    PUSHBUTTON      "C#7",IDC_BUTTON31,220,30,35,15
+    PUSHBUTTON      "C#11",IDC_BUTTON32,255,30,35,15
+    PUSHBUTTON      "C#13",IDC_BUTTON33,290,30,35,15
+    PUSHBUTTON      "C#m7b5",IDC_BUTTON34,325,30,35,15
+    PUSHBUTTON      "C#dim7",IDC_BUTTON35,360,30,35,15
+    PUSHBUTTON      "C#6",IDC_BUTTON36,395,30,35,15
+    PUSHBUTTON      "C#+",IDC_BUTTON37,430,30,35,15
+    PUSHBUTTON      "C#7+",IDC_BUTTON38,465,30,35,15
+    PUSHBUTTON      "DM7",IDC_BUTTON39,45,45,35,15
+    PUSHBUTTON      "DM9",IDC_BUTTON40,80,45,35,15
+    PUSHBUTTON      "Dm",IDC_BUTTON41,115,45,35,15
+    PUSHBUTTON      "Dm7",IDC_BUTTON42,150,45,35,15
+    PUSHBUTTON      "Dm9",IDC_BUTTON43,185,45,35,15
+    PUSHBUTTON      "D7",IDC_BUTTON44,220,45,35,15
+    PUSHBUTTON      "D11",IDC_BUTTON45,255,45,35,15
+    PUSHBUTTON      "D13",IDC_BUTTON46,290,45,35,15
+    PUSHBUTTON      "Dm7b5",IDC_BUTTON47,325,45,35,15
+    PUSHBUTTON      "Ddim7",IDC_BUTTON48,360,45,35,15
+    PUSHBUTTON      "D6",IDC_BUTTON49,395,45,35,15
+    PUSHBUTTON      "D+",IDC_BUTTON50,430,45,35,15
+    PUSHBUTTON      "D7+",IDC_BUTTON51,465,45,35,15
+    PUSHBUTTON      "CM7",IDC_BUTTON52,45,60,35,15
+    PUSHBUTTON      "CM9",IDC_BUTTON53,80,60,35,15
+    PUSHBUTTON      "Cm",IDC_BUTTON54,115,60,35,15
+    PUSHBUTTON      "Cm7",IDC_BUTTON55,150,60,35,15
+    PUSHBUTTON      "Cm9",IDC_BUTTON56,185,60,35,15
+    PUSHBUTTON      "C7",IDC_BUTTON57,220,60,35,15
+    PUSHBUTTON      "C11",IDC_BUTTON58,255,60,35,15
+    PUSHBUTTON      "C13",IDC_BUTTON59,290,60,35,15
+    PUSHBUTTON      "Cm7b5",IDC_BUTTON60,325,60,35,15
+    PUSHBUTTON      "Cdim7",IDC_BUTTON61,360,60,35,15
+    PUSHBUTTON      "C6",IDC_BUTTON62,395,60,35,15
+    PUSHBUTTON      "C+",IDC_BUTTON63,430,60,35,15
+    PUSHBUTTON      "C7+",IDC_BUTTON64,465,60,35,15
+    PUSHBUTTON      "CM7",IDC_BUTTON65,45,75,35,15
+    PUSHBUTTON      "CM9",IDC_BUTTON66,80,75,35,15
+    PUSHBUTTON      "Cm",IDC_BUTTON67,115,75,35,15
+    PUSHBUTTON      "Cm7",IDC_BUTTON68,150,75,35,15
+    PUSHBUTTON      "Cm9",IDC_BUTTON69,185,75,35,15
+    PUSHBUTTON      "C7",IDC_BUTTON70,220,75,35,15
+    PUSHBUTTON      "C11",IDC_BUTTON71,255,75,35,15
+    PUSHBUTTON      "C13",IDC_BUTTON72,290,75,35,15
+    PUSHBUTTON      "Cm7b5",IDC_BUTTON73,325,75,35,15
+    PUSHBUTTON      "Cdim7",IDC_BUTTON74,360,75,35,15
+    PUSHBUTTON      "C6",IDC_BUTTON75,395,75,35,15
+    PUSHBUTTON      "C+",IDC_BUTTON76,430,75,35,15
+    PUSHBUTTON      "C7+",IDC_BUTTON77,465,75,35,15
+    PUSHBUTTON      "CM7",IDC_BUTTON78,45,90,35,15
+    PUSHBUTTON      "CM9",IDC_BUTTON79,80,90,35,15
+    PUSHBUTTON      "Cm",IDC_BUTTON80,115,90,35,15
+    PUSHBUTTON      "Cm7",IDC_BUTTON81,150,90,35,15
+    PUSHBUTTON      "Cm9",IDC_BUTTON82,185,90,35,15
+    PUSHBUTTON      "C7",IDC_BUTTON83,220,90,35,15
+    PUSHBUTTON      "C11",IDC_BUTTON84,255,90,35,15
+    PUSHBUTTON      "C13",IDC_BUTTON85,290,90,35,15
+    PUSHBUTTON      "Cm7b5",IDC_BUTTON86,325,90,35,15
+    PUSHBUTTON      "Cdim7",IDC_BUTTON87,360,90,35,15
+    PUSHBUTTON      "C6",IDC_BUTTON88,395,90,35,15
+    PUSHBUTTON      "C+",IDC_BUTTON89,430,90,35,15
+    PUSHBUTTON      "C7+",IDC_BUTTON90,465,90,35,15
+    PUSHBUTTON      "CM7",IDC_BUTTON91,45,105,35,15
+    PUSHBUTTON      "CM9",IDC_BUTTON92,80,105,35,15
+    PUSHBUTTON      "Cm",IDC_BUTTON93,115,105,35,15
+    PUSHBUTTON      "Cm7",IDC_BUTTON94,150,105,35,15
+    PUSHBUTTON      "Cm9",IDC_BUTTON95,185,105,35,15
+    PUSHBUTTON      "C7",IDC_BUTTON96,220,105,35,15
+    PUSHBUTTON      "C11",IDC_BUTTON97,255,105,35,15
+    PUSHBUTTON      "C13",IDC_BUTTON98,290,105,35,15
+    PUSHBUTTON      "Cm7b5",IDC_BUTTON99,325,105,35,15
+    PUSHBUTTON      "Cdim7",IDC_BUTTON100,360,105,35,15
+    PUSHBUTTON      "C6",IDC_BUTTON101,395,105,35,15
+    PUSHBUTTON      "C+",IDC_BUTTON102,430,105,35,15
+    PUSHBUTTON      "C7+",IDC_BUTTON103,465,105,35,15
+    PUSHBUTTON      "CM7",IDC_BUTTON104,45,120,35,15
+    PUSHBUTTON      "CM9",IDC_BUTTON105,80,120,35,15
+    PUSHBUTTON      "Cm",IDC_BUTTON106,115,120,35,15
+    PUSHBUTTON      "Cm7",IDC_BUTTON107,150,120,35,15
+    PUSHBUTTON      "Cm9",IDC_BUTTON108,185,120,35,15
+    PUSHBUTTON      "C7",IDC_BUTTON109,220,120,35,15
+    PUSHBUTTON      "C11",IDC_BUTTON110,255,120,35,15
+    PUSHBUTTON      "C13",IDC_BUTTON111,290,120,35,15
+    PUSHBUTTON      "Cm7b5",IDC_BUTTON112,325,120,35,15
+    PUSHBUTTON      "Cdim7",IDC_BUTTON113,360,120,35,15
+    PUSHBUTTON      "C6",IDC_BUTTON114,395,120,35,15
+    PUSHBUTTON      "C+",IDC_BUTTON115,430,120,35,15
+    PUSHBUTTON      "C7+",IDC_BUTTON116,465,120,35,15
+    PUSHBUTTON      "CM7",IDC_BUTTON117,45,135,35,15
+    PUSHBUTTON      "CM9",IDC_BUTTON118,80,135,35,15
+    PUSHBUTTON      "Cm",IDC_BUTTON119,115,135,35,15
+    PUSHBUTTON      "Cm7",IDC_BUTTON120,150,135,35,15
+    PUSHBUTTON      "Cm9",IDC_BUTTON121,185,135,35,15
+    PUSHBUTTON      "C7",IDC_BUTTON122,220,135,35,15
+    PUSHBUTTON      "C11",IDC_BUTTON123,255,135,35,15
+    PUSHBUTTON      "C13",IDC_BUTTON124,290,135,35,15
+    PUSHBUTTON      "Cm7b5",IDC_BUTTON125,325,135,35,15
+    PUSHBUTTON      "Cdim7",IDC_BUTTON126,360,135,35,15
+    PUSHBUTTON      "C6",IDC_BUTTON127,395,135,35,15
+    PUSHBUTTON      "C+",IDC_BUTTON128,430,135,35,15
+    PUSHBUTTON      "C7+",IDC_BUTTON129,465,135,35,15
+    PUSHBUTTON      "CM7",IDC_BUTTON130,45,150,35,15
+    PUSHBUTTON      "CM9",IDC_BUTTON131,80,150,35,15
+    PUSHBUTTON      "Cm",IDC_BUTTON132,115,150,35,15
+    PUSHBUTTON      "Cm7",IDC_BUTTON133,150,150,35,15
+    PUSHBUTTON      "Cm9",IDC_BUTTON134,185,150,35,15
+    PUSHBUTTON      "C7",IDC_BUTTON135,220,150,35,15
+    PUSHBUTTON      "C11",IDC_BUTTON136,255,150,35,15
+    PUSHBUTTON      "C13",IDC_BUTTON137,290,150,35,15
+    PUSHBUTTON      "Cm7b5",IDC_BUTTON138,325,150,35,15
+    PUSHBUTTON      "Cdim7",IDC_BUTTON139,360,150,35,15
+    PUSHBUTTON      "C6",IDC_BUTTON140,395,150,35,15
+    PUSHBUTTON      "C+",IDC_BUTTON141,430,150,35,15
+    PUSHBUTTON      "C7+",IDC_BUTTON142,465,150,35,15
+    PUSHBUTTON      "CM7",IDC_BUTTON143,45,165,35,15
+    PUSHBUTTON      "CM9",IDC_BUTTON144,80,165,35,15
+    PUSHBUTTON      "Cm",IDC_BUTTON145,115,165,35,15
+    PUSHBUTTON      "Cm7",IDC_BUTTON146,150,165,35,15
+    PUSHBUTTON      "Cm9",IDC_BUTTON147,185,165,35,15
+    PUSHBUTTON      "C7",IDC_BUTTON148,220,165,35,15
+    PUSHBUTTON      "C11",IDC_BUTTON149,255,165,35,15
+    PUSHBUTTON      "C13",IDC_BUTTON150,290,165,35,15
+    PUSHBUTTON      "Cm7b5",IDC_BUTTON151,325,165,35,15
+    PUSHBUTTON      "Cdim7",IDC_BUTTON152,360,165,35,15
+    PUSHBUTTON      "C6",IDC_BUTTON153,395,165,35,15
+    PUSHBUTTON      "C+",IDC_BUTTON154,430,165,35,15
+    PUSHBUTTON      "C7+",IDC_BUTTON155,465,165,35,15
+    PUSHBUTTON      "CM7",IDC_BUTTON156,45,180,35,15
+    PUSHBUTTON      "CM9",IDC_BUTTON157,80,180,35,15
+    PUSHBUTTON      "Cm",IDC_BUTTON158,115,180,35,15
+    PUSHBUTTON      "Cm7",IDC_BUTTON159,150,180,35,15
+    PUSHBUTTON      "Cm9",IDC_BUTTON160,185,180,35,15
+    PUSHBUTTON      "C7",IDC_BUTTON161,220,180,35,15
+    PUSHBUTTON      "C11",IDC_BUTTON162,255,180,35,15
+    PUSHBUTTON      "C13",IDC_BUTTON163,290,180,35,15
+    PUSHBUTTON      "Cm7b5",IDC_BUTTON164,325,180,35,15
+    PUSHBUTTON      "Cdim7",IDC_BUTTON165,360,180,35,15
+    PUSHBUTTON      "C6",IDC_BUTTON166,395,180,35,15
+    PUSHBUTTON      "C+",IDC_BUTTON167,430,180,35,15
+    PUSHBUTTON      "C7+",IDC_BUTTON168,465,180,35,15
+END
+
+CHORDPROGRESSION DIALOG DISCARDABLE  0, 0, 368, 300
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Chord Progression"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_TICKS,37,15,33,14
+    EDITTEXT        IDC_STARTMEASURE,139,15,40,14,ES_AUTOHSCROLL
+    LISTBOX         IDC_RT,38,33,58,104,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LISTBOX         IDC_CHORD,38,145,58,148,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Add",IDC_ADDCHORD,112,42,50,14
+    CONTROL         "C&hord",IDC_CHORDBOOL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,113,70,49,10
+    CONTROL         "&Bass Note",IDC_BASSNOTE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,113,88,49,10
+    CONTROL         "&Melody",IDC_MELODY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,113,106,49,10
+    LISTBOX         IDC_HISTORY,111,148,58,145,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "A&dd",IDC_ADDHISTORY,175,164,50,14
+    PUSHBUTTON      "C&lear History",IDC_CLEARHISTORY,175,182,50,14
+    LISTBOX         IDC_PROGRESSION,239,77,58,216,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Move &Up",IDC_MOVEUP,311,45,50,14
+    PUSHBUTTON      "Move &Down",IDC_MOVEDOWN,311,69,50,14
+    PUSHBUTTON      "&Remove",IDC_REM,311,93,50,14
+    DEFPUSHBUTTON   "OK",IDOK,311,217,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,311,234,50,14
+    LTEXT           "&Chord :",IDC_STATIC,7,151,24,8
+    LTEXT           "&Value :",IDC_STATIC,7,18,23,8
+    LTEXT           "&Start Measure :",IDC_STATIC,87,17,49,8
+    LTEXT           "Root :",IDC_STATIC,7,36,20,8
+    LTEXT           "History :",IDC_STATIC,114,135,26,8
+    PUSHBUTTON      "&Open...",IDC_OPEN,311,156,50,14
+    PUSHBUTTON      "&Save...",IDC_SAVE,311,176,50,14
+END
+
+RECORDSETTINGS DIALOG DISCARDABLE  0, 0, 196, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Record Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        MAXTIME,111,8,20,14,ES_AUTOHSCROLL
+    CONTROL         "11025",IDC_11025,"Button",BS_AUTORADIOBUTTON,61,28,36,
+                    10
+    CONTROL         "8",IDC_8BIT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,67,
+                    46,20,10
+    CONTROL         "16",IDC_16BIT,"Button",BS_AUTORADIOBUTTON,93,46,24,10
+    CONTROL         "Mono",IDC_MONO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    36,64,38,10
+    CONTROL         "Stereo",IDC_STEREO,"Button",BS_AUTORADIOBUTTON,74,64,37,
+                    10
+    DEFPUSHBUTTON   "OK",IDOK,139,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,139,24,50,14
+    LTEXT           "Maximum recording time (secs) :",IDC_STATIC,7,10,101,8
+    LTEXT           "Sample Rate :",IDC_STATIC,7,28,46,8
+    LTEXT           "Bits per sample :",IDC_STATIC,7,46,52,8
+    LTEXT           "Mode :",IDC_STATIC,7,64,23,8
+END
+
+CLICKTRACK DIALOG DISCARDABLE  0, 0, 186, 46
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Click Track"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_MEASURES,45,7,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_VOICE,45,22,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+    LTEXT           "Measures :",IDC_STATIC,7,10,36,8
+    LTEXT           "Voice :",IDC_STATIC,7,24,23,8
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "#include ""commctrl.h""\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "CURSORSETTINGS", DIALOG
+    BEGIN
+        RIGHTMARGIN, 132
+    END
+
+    "MIDIINFO", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 456
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 251
+    END
+
+    "PERCUSSION", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+
+    "DEFINESECTION", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 236
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    "SONGSTRUCTURE", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 409
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+
+    "DUMPSONG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 466
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 285
+    END
+
+    "CHORDPROGRESSION_", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 500
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 280
+    END
+
+    "CHORDPROGRESSION", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 361
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 293
+    END
+
+    "RECORDSETTINGS", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    "CLICKTRACK", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CROSSHAIRS          CURSOR  DISCARDABLE     "res\\crosshai.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NOTE_CHORD           "Chord"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
